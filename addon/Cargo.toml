@@ -1,0 +1,21 @@
+[package]
+name = "fabric-addon"
+version = "0.1.0"
+authors = ["l3ops <github@leops.me>"]
+edition = "2018"
+
+[lib]
+name = "fabric"
+crate-type = ["cdylib"]
+
+[dependencies]
+ctor = "0.1.16"
+log = "0.4.11"
+
+[dependencies.fabric-codegen]
+version = "*"
+path = "../codegen"
+
+[dependencies.fabric-runtime]
+version = "*"
+path = "../runtime"

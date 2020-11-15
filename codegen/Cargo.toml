@@ -1,0 +1,15 @@
+[package]
+name = "fabric-codegen"
+version = "0.1.0"
+authors = ["l3ops <github@leops.me>"]
+edition = "2018"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+quote = "1.0.3"
+
+[dependencies.syn]
+version = "1.0.17"
+features = ["extra-traits"]
